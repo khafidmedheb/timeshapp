@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TimeSheet index{% endblock %}
+
+{% block body %}
+    <h1>Timesheet</h1>
+{#    <h1>TimeSheet index</h1>#}
+
+{#    <table class="table">#}
+{#        <thead>#}
+{#            <tr>#}
+{#                <th>Id</th>#}
+{#                <th>Nom</th>#}
+{#                <th>Prenom</th>#}
+{#                <th>Cours</th>#}
+{#                <th>Commentaire</th>#}
+{#                <th>Created_at</th>#}
+{#                <th>Updated_at</th>#}
+{#                <th>Deleted_at</th>#}
+{#                <th>Adresse</th>#}
+{#                <th>Cp</th>#}
+{#                <th>Ville</th>#}
+{#                <th>Age</th>#}
+{#                <th>actions</th>#}
+{#            </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#        {% for time_sheet in time_sheets %}#}
+{#            <tr>#}
+{#                <td>{{ time_sheet.id }}</td>#}
+{#                <td>{{ time_sheet.nom }}</td>#}
+{#                <td>{{ time_sheet.prenom }}</td>#}
+{#                <td>{{ time_sheet.cours }}</td>#}
+{#                <td>{{ time_sheet.commentaire }}</td>#}
+{#                <td>{{ time_sheet.createdAt ? time_sheet.createdAt|date('Y-m-d H:i:s') : '' }}</td>#}
+{#                <td>{{ time_sheet.updatedAt ? time_sheet.updatedAt|date('Y-m-d H:i:s') : '' }}</td>#}
+{#                <td>{{ time_sheet.deletedAt ? time_sheet.deletedAt|date('Y-m-d H:i:s') : '' }}</td>#}
+{#                <td>{{ time_sheet.adresse }}</td>#}
+{#                <td>{{ time_sheet.cp }}</td>#}
+{#                <td>{{ time_sheet.ville }}</td>#}
+{#                <td>{{ time_sheet.age }}</td>#}
+{#                <td>#}
+{#                    <a href="{{ path('time_sheet_show', {'id': time_sheet.id}) }}">show</a>#}
+{#                    <a href="{{ path('time_sheet_edit', {'id': time_sheet.id}) }}">edit</a>#}
+{#                </td>#}
+{#            </tr>#}
+{#        {% else %}#}
+{#            <tr>#}
+{#                <td colspan="13">no records found</td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{#        </tbody>#}
+{#    </table>#}
+
+{#    <a href="{{ path('time_sheet_new') }}">Create new</a>#}
+{% endblock %}
